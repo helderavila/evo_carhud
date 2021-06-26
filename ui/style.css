@@ -1,0 +1,59 @@
+body {
+  font-family: 'Chivo', sans-serif;
+  box-sizing: border-box;
+}
+
+#container {
+  background: rgba(0,0,0,0.6);
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  right: 3rem;
+  bottom: 6rem;
+  padding: 1rem;
+  border-radius: 4px;
+  display: none;
+  transform: skewY(5deg);
+}
+
+#container.isInVehicle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+}
+
+.vehicle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.speed-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.speed-info strong {
+    font-size: 2rem;
+   margin-bottom: 5px;
+   margin-right: 0.8rem;
+}
+
+.speed {
+  font-size: 2.5rem;
+  padding: 0;
+  color: rgba(255,255,255,0.9);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px;
+}
+
+.fuel.reserve-fuel {
+  color: tomato;
+}
+
+.oil.out-oil {
+  color: tomato;
+}
